@@ -1,0 +1,16 @@
+#section_bookmark {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.bookmark {
+  width: 100%;
+  margin: 67px 0;
+  background-color: #fff;
+  padding: 40px;
+  border: 4px solid #6b828e;
+}
+
+.bookmark__website-title {
+  
+}
