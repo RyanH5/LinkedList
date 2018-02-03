@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100vw;
@@ -10,7 +11,7 @@ body {
 
 main {
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-color: #455A64;
 }
 
@@ -28,12 +29,33 @@ h1 {
 
 form {
   height: 60%;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .form__input {
   width: 100%;
+  height: 130px;
+  margin: 0 0 60px;
+  font-size: 5rem;
+  padding: 20px;
+  border: 3px solid #c8cacc;
+}
+
+.form__input::placeholder {
+  color: #bbbdbf;
+}
+
+#form__btn-submit {
+  width: 100%;
+  background-color: #ffc107;
+  height: 112px;
+  color: #fff;
+  font-size: 3rem;
+}
+
+#form__btn-submit:hover {
+  border-color: #ffd773;
 }
 
 #image__logo {
