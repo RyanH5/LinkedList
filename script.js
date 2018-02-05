@@ -1,5 +1,7 @@
 $('#form__btn-submit').on('click', prependBookmark);
 $('#section-bookmark-list').on('click', '.bookmark__btn-read',toggleRead);
+$('#section-bookmark-list').on('click', '.bookmark__btn-delete', removeBookmark);
+
 // $('#form__input-title').val() = $('bookmark__website-title').text()
 // console.log(title)
 
@@ -26,6 +28,9 @@ function prependBookmark(e) {
 
 function toggleRead() {
   $(this).toggleClass('read');
-  
 }
 
+function removeBookmark() {
+  console.log(this);
+  $(this).closest('article').remove();
+}
