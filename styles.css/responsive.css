@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 760px) {
   main {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     width: 50vw;
@@ -37,19 +37,21 @@
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 5.9vw;
   }
 
   #image__logo {
-    height: 25px;
+    height: 4.5vw;
   }
 }
 
 @media screen and (min-width: 1010px) {
-  h1 {
-    font-size: 3rem;
-  }
-  #image__logo {
+  
+  /*#image__logo {
     height: 37px;
-  }
+  }*/
+}
+
+@media screen and (min-width: 1200px) {
+
 }
