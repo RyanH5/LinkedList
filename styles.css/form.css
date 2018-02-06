@@ -11,16 +11,16 @@ body {
   width: 100vw;
   background-color: #CFd8DC;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 main {
   width: 100%;
-  height: 750px;
   background-color: #455A64;
 }
 
 header {
-  width: 80%;
+  width: 85%;
   text-align: center;
   margin: 0px auto;
 }
@@ -28,7 +28,11 @@ header {
 h1 {
  color: #fff;
  padding: 5%;
- font-size: 5.5rem;
+ font-size: 1.5rem;
+}
+
+#image__logo {
+  height: 20px;
 }
 
 form {
@@ -39,11 +43,11 @@ form {
 
 .form__input {
   width: 100%;
-  height: 130px;
-  margin: 0 0 60px;
-  font-size: 5rem;
-  padding: 20px;
-  border: 3px solid #c8cacc;
+  height: 55px;
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  padding: 12px;
+  border: 1.5px solid #c8cacc;
 }
 
 .form__input::placeholder {
@@ -53,16 +57,15 @@ form {
 #form__btn-submit {
   width: 100%;
   background-color: #ffc107;
-  height: 112px;
+  height: 45px;
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.4rem;
+  margin: 0 0 18px;
 }
 
 #form__btn-submit:hover {
   background-color: #ffd773;
 }
 
-#image__logo {
-  height: 67px;
-}
+
 

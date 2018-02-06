@@ -1,0 +1,53 @@
+@media screen and (min-width: 410px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #image__logo {
+  height: 30px;
+}
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  #image__logo {
+    height: 49px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    width: 50vw;
+    height: 100vh;
+    display: inline-block;
+  }
+
+  #section-bookmark-list {
+    float: right;
+    width: 46vw;
+  }
+
+  .bookmark {
+    width: 92%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #image__logo {
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #image__logo {
+    height: 37px;
+  }
+}
