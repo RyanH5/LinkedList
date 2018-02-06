@@ -4,6 +4,13 @@ $('#section-bookmark-list').on('click', '.bookmark__btn-delete', removeBookmark)
 $('#form__input-title').on('keyup', requireTitleAndURL);
 $('#form__input-url').on('keyup', requireTitleAndURL);
 
+function clearAndFocus() {
+  $('#form__input-title').val('');
+  $('#form__input-url').val('');
+  $('#form__btn-submit').attr('disabled', true);
+  $('#form__input-title').focus();
+}
+
 function requireTitleAndURL() {
   if ($('#form__input-title').val() !== '' && $('#form__input-url').val() !== '') {
     $('#form__btn-submit').attr('disabled', false);
@@ -11,6 +18,7 @@ function requireTitleAndURL() {
 }
 
 function prependBookmark(e) {
+  requireTitleAndURL();
     e.preventDefault();
     $('#section-bookmark-list').prepend(`
     <article class="bookmark">
@@ -20,7 +28,8 @@ function prependBookmark(e) {
       <hr>
       <button class="bookmark__btn-read">Read</button>
       <button class="bookmark__btn-delete">Delete</button>
-    </article>`)
+    </article>`);
+    clearAndFocus();
 }
 
 function toggleRead() {
@@ -31,4 +40,6 @@ function removeBookmark() {
   console.log(this);
   $(this).closest('article').remove();
 }
+
+
 
