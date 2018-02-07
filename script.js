@@ -1,11 +1,13 @@
 $('#form__btn-submit').on('click', prependBookmark);
 $('#section-bookmark-list').on('click', '.bookmark__btn-read',toggleRead);
 $('#section-bookmark-list').on('click', '.bookmark__btn-delete', removeBookmark);
+$('#bookmark-remove-all-read').on('click', removeAllRead);
 $('#form__input-title').on('keyup', requireTitleAndURL);
 $('#form__input-url').on('keyup', requireTitleAndURL);
-$('#form__btn-submit').on('click', updateCount)
-$('#section-bookmark-list').on('click', '.bookmark__btn-read', updateCount)
-$('#section-bookmark-list').on('click', '.bookmark__btn-delete', updateCount)
+$('#form__btn-submit').on('click', updateCount);
+$('#section-bookmark-list').on('click', '.bookmark__btn-read', updateCount);
+$('#section-bookmark-list').on('click', '.bookmark__btn-delete', updateCount);
+// $('#form__input-url').on('input', isValidURL);
 
 function updateCount(){
   var counterTotal = $('.bookmark__btn-delete').length;
@@ -26,6 +28,16 @@ function requireTitleAndURL() {
     $('#form__btn-submit').attr('disabled', false);
   } 
 }
+
+// function  isValidURL() {
+//   var input = $('#form__input-url').val();
+//   console.log('click')
+//   var validURL = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}$|^$/;
+//   console.log('hat')
+//   if(validURL.test(input)) {
+//     $('#form__btn-submit').prop('disabled', true);
+//   }   console.log('chat')
+// }
 
 function prependBookmark(e) {
   requireTitleAndURL();
@@ -49,6 +61,11 @@ function toggleRead() {
 function removeBookmark() {
   console.log(this);
   $(this).closest('article').remove();
+}
+
+function removeAllRead() {
+  var bookmarksRead = $('.read');
+  bookmarksRead.parent().remove();
 }
 
 
