@@ -1,9 +1,43 @@
+/*BOOKMARK COUNT TABS*/
+#section-counter {
+  display: flex;
+  float: right;
+  justify-content: space-around;
+  width: 100vw;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.counter {
+  background-color: #455a64;
+  color: #fff;
+  padding: 3px 3px 6px;
+  font-size: .8rem;
+  border-radius: 0 0 6px 6px;
+  margin: 0 11px;
+  display: inline-block;
+}
+
+#bookmark-count-total {
+  display: inline-block;
+}
+
+#bookmark-remove-all-read {
+  border: none;
+  background-color: #ffc107;
+  color: #455a64;
+}
+
+/*BOOKMARK SECTION*/
 #section-bookmark-list {
   width: 92%;
   margin: auto;
   height: 50vh;
   overflow-y: scroll;
   position: relative;
+  z-index: -1;
+  margin-top: -27px;
+  padding-top: 21px;
 }
 
 .bookmark {
@@ -14,6 +48,7 @@
   border: 1px solid #6b828e;
 }
 
+/*APPENDED BOOKMARK ELEMENTS*/
 h2 {
   display: inline-block;
   padding: 5px 0px;
