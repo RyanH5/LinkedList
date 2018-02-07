@@ -1,3 +1,11 @@
+#section-counter {
+
+}
+
+.counter {
+
+}
+
 #section-bookmark-list {
   width: 92%;
   margin: auto;
@@ -64,6 +72,8 @@ a:hover {
 .bookmark__btn-delete {
   float: right;
 }
+
+
 
 
 

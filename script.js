@@ -10,8 +10,8 @@ $('#section-bookmark-list').on('click', '.bookmark__btn-delete', updateCount)
 function updateCount(){
   var counterTotal = $('.bookmark__btn-delete').length;
   var counterRead = $('.read').length;
-  $('.counter__total').text(counterTotal);
-  $('.counter__read').text(counterRead);
+  $('#bookmark-count-total').text(counterTotal);
+  $('#bookmark-count-read').text(counterRead);
 }  
 
 function clearAndFocus() {
