@@ -21,6 +21,7 @@
 @media screen and (min-width: 760px) {
   main {
     display: inline-flex;
+    float: left;
     flex-direction: column;
     justify-content: center;
     width: 50vw;
@@ -30,6 +31,11 @@
   #section-bookmark-list {
     float: right;
     width: 46vw;
+    height: 95.7vh;
+  }
+
+  #section-counter {
+    width: 50vw;
   }
 
   .bookmark {
