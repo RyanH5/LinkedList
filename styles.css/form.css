@@ -17,6 +17,7 @@ body {
 main {
   width: 100%;
   background-color: #455A64;
+  top: 0;
 }
 
 header {
