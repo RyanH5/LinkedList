@@ -7,8 +7,17 @@
   <link rel="stylesheet" type="text/css" href="styles.css/responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css/popup.css">
 </head>
 <body>
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Please, god, no, type in a correct URL like this: HTTP://www.yourwebsite.com</p>
+        <span class="close">&times;</span>
+        <img src="https://media.giphy.com/media/5ftsmLIqktHQA/giphy.gif">
+        <img src="https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif">
+      </div>
+    </div>
   <main>
     <header>
       <h1>
@@ -24,7 +33,10 @@
       <label for="form__input-url"></label>
       <input type="website-url" id="form__input-url" class="form__input" name="website-url" placeholder="Website URL">
       </br>
-      <input type="submit" id="form__btn-submit" value="Enter" name="btn-submit" disabled>
+      <label for="form__btn-submit" id="submit-btn"></label>
+      <div id="submit-wrap">
+        <input type="submit" id="form__btn-submit" value="Enter" name="btn-submit" disabled>
+      </div>
     </form> 
   </main>
   <section id="section-counter">
