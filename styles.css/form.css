@@ -3,33 +3,33 @@ html {
 }
 
 *, *:before, *:after {
-  margin: 0;
   box-sizing: inherit;
+  margin: 0;
 }
 
 body {
-  width: 100vw;
   background-color: #CFd8DC;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  width: 100vw;
 }
 /*MOBILE FIRST CSS FORM RULES*/
 main {
-  width: 100%;
   background-color: #455A64;
   top: 0;
+  width: 100%;
 }
 
 header {
-  width: 100%;
-  text-align: center;
   margin: 0px auto;
+  text-align: center;
+  width: 100%;
 }
 
 h1 {
  color: #fff;
- padding: 5%;
  font-size: 1.5rem;
+ padding: 5%;
 }
 
 #image__logo {
@@ -37,17 +37,17 @@ h1 {
 }
 
 form {
-  width: 85%;
   margin: 0 auto;
+  width: 85%;
 }
 
 .form__input {
-  width: 100%;
+  border: 1.5px solid #c8cacc;
+  font-size: 1.8rem;
   height: 55px;
   margin: 0 0 20px;
-  font-size: 1.8rem;
   padding: 12px;
-  border: 1.5px solid #c8cacc;
+  width: 100%;
 }
 
 .form__input::placeholder {
@@ -55,12 +55,12 @@ form {
 }
 
 #form__btn-submit {
-  width: 100%;
   background-color: #ffc107;
-  height: 45px;
   color: #fff;
   font-size: 1.4rem;
+  height: 45px;
   margin: 0 0 18px;
+  width: 100%;
 }
 
 #form__btn-submit:hover {
