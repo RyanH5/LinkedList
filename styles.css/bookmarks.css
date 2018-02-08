@@ -1,11 +1,11 @@
 /*BOOKMARK COUNT TABS*/
 #section-counter {
+  background-color: transparent;
   display: flex;
   float: right;
-  justify-content: space-around;
+  justify-content: space-around
   width: 100vw;
   z-index: 1;
-  background-color: transparent;
 }
 
 .counter {

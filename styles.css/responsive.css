@@ -32,7 +32,6 @@
     float: right;
     width: 46vw;
     height: 100vh;
-    margin: auto;
     overflow-y: scroll;
     position: relative;
     z-index: -1;
@@ -57,13 +56,4 @@
   }
 }
 
-@media screen and (min-width: 1010px) {
-  
-  /*#image__logo {
-    height: 37px;
-  }*/
-}
 
-@media screen and (min-width: 1200px) {
-
-}
