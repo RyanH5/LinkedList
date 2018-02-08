@@ -32,6 +32,12 @@
     float: right;
     width: 46vw;
     height: 100vh;
+    margin: auto;
+    overflow-y: scroll;
+    position: relative;
+    z-index: -1;
+    margin-top: -27px;
+    padding-top: 21px;
   }
 
   #section-counter {
